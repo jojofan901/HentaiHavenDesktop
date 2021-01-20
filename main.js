@@ -1,11 +1,31 @@
-const electroon = require('electron');
+const electron = require('electron');
 
-console.log('uhhh I dont have shit done yet UwU');
+const url = require('url');
+const path = require('path');
 
-console.log('btw no hentai in this project *wink* *wink* thats all somewhere else. idk if thid will get me removed from git hib but...');
+const {app, BrowserWindow, Menu} = electron;
 
-console.log('but for yall who want to see hentai I got you');
+let mainWindow;
 
-console.log('8==================D ()');
+app.on('ready', function (){
+    mainWindow = new BrowserWindow({
+        width: 1280,
+        height: 720,
+        titleBarStyle: 'hidden',
+        icon: 'logo.png',
+        show: false
+    });
 
-console.log('you fucking pervert');
+    mainWindow.loadURL('https://hentaihaven.com');
+
+
+    setTimeout(() => {
+        mainWindow.show();
+    }, 1000);
+
+    const mainMenu = Menu.buildFromTemplate(mainMenuTemplate);
+    Menu.setApplicationMenu(mainMenu);
+});
+
+const mainMenuTemplate = [
+];

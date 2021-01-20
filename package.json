@@ -1,0 +1,23 @@
+{
+  "name": "hentaihavendesktop",
+  "version": "1.0.0",
+  "description": "So you can get all the hentai you need on your desktop!",
+  "main": "main.js",
+  "scripts": {
+    "start": "electron ."
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jojofan901/HentaiHavenDesktop.git"
+  },
+  "author": "jojofan901",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/jojofan901/HentaiHavenDesktop/issues"
+  },
+  "homepage": "https://github.com/jojofan901/HentaiHavenDesktop#readme",
+  "dependencies": {
+    "custom-electron-titlebar": "^3.2.6",
+    "electron": "^11.2.0"
+  }
+}
